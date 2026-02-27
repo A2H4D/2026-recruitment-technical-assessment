@@ -1,0 +1,29 @@
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  min-height: calc(100vh - 120px);
+  align-content: start;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    aspect-ratio: 3 / 2.8;
+  }
+}
+
+/* Mobile */
+@media (max-width: 667px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px;
+  }
+}
